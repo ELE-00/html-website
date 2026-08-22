@@ -1,0 +1,123 @@
+
+MANUAL WEBSITE
+
+Task: Add images to the page
+Decision: Originally wrapped <img> in <picture> then removed it given that I am not adding images of different resolution
+
+Task: Create navigation
+Decision: I used <nav> with simple <a> tags
+
+Task: Add Headings and Paragraphs
+Decision: I used <section> for all heading and related paragraphs. In index.html, I used <header> for headings.
+
+Problem: Initially overused <br> elements to separate content and control spacing.
+Solution: Decided to use <br> only where a line break was actually needed and used separate HTML elements such as <p> and <ul> when the content represented separate paragraphs or lists.
+
+Problem: Initially used type="text" for the email field.
+Solution: Changed it to type="email" so the HTML describes the expected type of information and the browser can provide basic email validation.
+
+
+
+AI WEBSITE
+
+Prompt 1: 
+Create a three page website for a coffee shop called JungleBrew - home page, about us page and contact us page.
+Each page should have a navigation to each page at the top of the page.
+Use only semantic HTML only.
+
+Result: Claude analyzed the files in the manual version folder (without me asking) and created the same website. Also copied the asset folder.
+
+
+
+
+
+
+
+Comparison MANUAL vs AI assisted:
+
+
+-------
+HOME PAGE
+
+1. <main> element
+
+What is different?
+My manual version places the main content directly inside <body>. The AI version wraps the main content in a <main> element.
+
+Why do you think the two versions are different?
+I didn't initially think about using <main>, while the AI likely included it because it follows common semantic HTML practices.
+
+Which solution do you prefer?
+I prefer the AI solution.
+
+Why?
+<main> clearly identifies the primary content of the page and makes the HTML more semantic and easier to understand.
+
+-------
+
+2. Image and caption
+
+What is different?
+My manual version displays the image directly inside the section. The AI version wraps the image in a <figure> element and adds a <figcaption>.
+
+Why do you think the two versions are different?
+I focused on the requirements of the assignment, which only required an image. I didn't think a caption was necessary. The AI added the <figure> and caption as an additional semantic element.
+
+Which solution do you prefer?
+I prefer my manual version.
+
+Why?
+The caption doesn't add any important information to this page, so I think it is unnecessary. The image already speaks for itself, and my version is simpler while still meeting the requirements.
+
+-----
+
+CONTACT PAGE
+
+3. Required fields
+
+What is different?
+My manual version does not mark any of the form fields as required. The AI version adds the required attribute to all the fields.
+
+Why do you think the two versions are different?
+I focused on creating the form fields required by the assignment, while the AI added basic form validation to make sure the user fills them in.
+
+Which solution do you prefer?
+I prefer the AI version.
+
+Why?
+It prevents the form from being submitted with missing information and improves the user experience without requiring JavaScript.
+
+
+-------
+
+4. <form action="#" method="post">
+
+What is different?
+My manual form only has <form>, while the AI version specifies action="#" and method="post".
+
+Why do you think the two versions are different?
+I only needed to create the structure of the contact form because the assignment doesn't require the form to actually send data. The AI added attributes that would normally be used when connecting the form to a backend.
+
+Which solution do you prefer?
+I prefer my manual version.
+
+Why?
+Since there is no backend to process the form, these attributes don't provide any useful functionality for this assignment. My version is sufficient for the requirements and avoids adding unnecessary code.
+
+-------
+
+5. AI adds a "Visit us" section
+
+What is different?
+My manual Contact page has only the contact form. The AI version adds a separate "Visit us" section containing the address and phone number.
+
+Why do you think the two versions are different?
+I focused on the requirements for the Contact page, which asked for a contact form. The AI added additional contact information to make the page more complete.
+
+Which solution do you prefer?
+I prefer my manual version.
+
+Why?
+The address and phone number are already provided in the footer, so repeating the same information in another section is unnecessary. My version is simpler and avoids duplicate content.
+
+This is actually a very good one for the assignment because it shows that more content isn't automatically better.
